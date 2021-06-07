@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <style>
+      #foodCont {
+        border: 2px solid black;
+        border-radius: 5px;
+        max-width: 1000px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 23% 23% 23% 23%;
+        min-height: 800px;
+        gap: 2%;
+      }
+      .foodItem {
+        border: 2px solid black;
+        background-color: cornsilk;
+        border-radius: 5px;
+        height: 350px;
+        padding: 2%;
+        margin: 2%;
+      }
+      .foodItem > div,
+      .foodItem > div img {
+        width: 100%;
+      }
+      h1 {
+        text-align: center;
+      }
+      button {
+        text-align: center;
+      }
+      #cartBtn {
+        width: 100px;
+        margin: auto;
+        margin-bottom: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Menu</h1>
+    <div id="cartBtn">
+      <button onclick="goToCart()">Go to Cart</button>
+    </div>
+
+    <div id="foodCont">
+      <div class="foodItem foodItem1">
+        <div>
+          <img
+            src="https://via.placeholder.com/200x200https://via.placeholder.com/200x200"
+            alt=""
+          />
+        </div>
+        <p>Price:500</p>
+        <p>Description:Biryani</p>
+        <p>Time to prepare:30 min</p>
+        <button onclick="addToCart('foodItem1')">Add to cart</button>
+      </div>
+      <div class="foodItem foodItem2">
+        <div>
+          <img src="https://via.placeholder.com/200x200" alt="" />
+        </div>
+        <p>Price: 400</p>
+        <p>Description: Shahi Paneer</p>
+        <p>Time to prepare: 40 min</p>
+        <button onclick="addToCart('foodItem2')">Add to cart</button>
+      </div>
+      <div class="foodItem foodItem3">
+        <div>
+          <img src="https://via.placeholder.com/200x200" alt="" />
+        </div>
+        <p>Price: 450</p>
+        <p>Description: Butter Chicken</p>
+        <p>Time to prepare: 45 min</p>
+        <button onclick="addToCart('foodItem3')">Add to cart</button>
+      </div>
+      <div class="foodItem foodItem4">
+        <div>
+          <img src="https://via.placeholder.com/200x200" alt="" />
+        </div>
+        <p>Price: 200</p>
+        <p>Description: Aloo Paratha</p>
+        <p>Time to prepare: 20 min</p>
+        <button onclick="addToCart('foodItem4')">Add to cart</button>
+      </div>
+    </div>
+  </body>
+  <script src="menu.js"></script>
+</html>
